@@ -48,4 +48,38 @@ equation: 𝑦=1/2x+1 and 𝑦=(𝑥−2)^2+0.5 for 0≤𝑥≤4.
 
 1.2 literally the same as 1.1 but with pixels
 this is too easy
+so like theres a short tutorial but what you need to do is answer some questions
+and go into a file they gave us called pixel_tutorial.py
 
+2.1 Same thing as 1.1 but PIXELS (now you can start doing the real stuff)
+so like make sure you do 1.2 it helps alot
+
+2.1.1 the TEST for the tutorial on pixels
+literally they gave you a lightning bolt image and you just find the area of the bolt using random sampling
+and pixel things they teach you in 1.2
+
+3.1 MORE TESTS (on images and pixels same as 2.1.1)
+Pull up the image that they gave you 3.1.png
+
+3.1.1 calculate area of board to target (YAY NO CODING)
+so the board is a 1x1 square
+and the target is a circle whose edges touch the edges of the square
+calculate the ratio of target:board area
+no need code just math
+
+3.1.2 random sampling the board problem
+so this is just like 3.1.1 but instead of math you do it with random sampling
+youre getting the hang of this just do random sampling for everything
+
+3.1.3 probability of scoring 10 or MORE
+so now its more complicated math so you can calculate the probabilty of scoring 10 or more
+there are numbers on the rings how much you score
+If the inner red circle has a radius of r1, and each circle on the board is larger than the 
+immediately smaller circle by 2 r1.  Work out the exact likelihood that a person will score 10 
+or more.
+
+3.1.4 random sampling the 10 or more problem
+
+3.1.5 a slightly misaligned target
+pull up the image they gave you 3.3.png
+just use random sampling to calculate area of each rings
