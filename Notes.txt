@@ -44,7 +44,7 @@ equation: y = x^2 for 0≤ x ≤ 3.
 same thing but on a 4x3 graph with a line and a curve
 so you need to find the area enclosed by the line and the curve
 literally the same thing
-equation: 𝑦=1/2x+1 and 𝑦=(𝑥−2)^2 for 0≤𝑥≤4.
+equation: 𝑦=1/2x+1 and 𝑦=(𝑥−2)^2+0.5 for 0≤𝑥≤4.
 
 1.2 literally the same as 1.1 but with pixels
 this is too easy
