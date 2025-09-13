@@ -1,0 +1,51 @@
+SUMMARY:
+the point of the investigation is to approximate the value of intergration
+intergration but simpler and stuff about calculus
+
+1 Guessing the area under a function (integral of a function) by using random selection
+KEY TERMS:
+Function: 
+    a function of a thing on a graph 
+    e.g. line function y=x^2+1
+Integral of a function (or integral): 
+    area under graph of a function
+OVERVIEW:
+You can calculate (using very hard math) the integral of a function
+practically means can calculate area under a function 
+    for example a line
+    or a curve or parabola etc.
+
+This is just given to us to show us what is possible - we dont need to do This
+instead we are approximating this area through a method called random selection
+
+1.1 Approximating Intergration of a function
+this section in the document: 
+    starts to describe what method we will use to calculate integral
+    explains it in detail
+
+so lets say we have a graph that goes to 20 for both x and y
+and we need to find the area under a line that goes from 0, 10 to 20, 10
+    1. generate alot of random dots in the graph
+    2. count the number of dots above the line
+    3. count the number of dots below the line
+    4. get the total area of the graph (20*20 = 400)
+    5. use the ratio of above:below to find area below the line
+
+the method is called the monte carlo estimate
+
+1.1.2 Problem 2
+now we need to use the monte carlo estimate
+to find the area under this equation on a 3x9 graph:
+     y = x^2
+and generate a image of the graphed function and sampling like the example in 1.1
+equation: y = x^2 for 0≤ x ≤ 3.
+
+1.1.3 Problem 3
+same thing but on a 4x3 graph with a line and a curve
+so you need to find the area enclosed by the line and the curve
+literally the same thing
+equation: 𝑦=1/2x+1 and 𝑦=(𝑥−2)^2 for 0≤𝑥≤4.
+
+1.2 literally the same as 1.1 but with pixels
+this is too easy
+
