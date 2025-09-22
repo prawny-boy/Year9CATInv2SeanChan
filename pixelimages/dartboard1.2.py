@@ -33,4 +33,4 @@ for i in range(5000):
 
 # Show image with the edits.
 img.show()
-print(f"Percentage space taken by dartboard: {inside_dart_board/(outside_dart_board+inside_dart_board)*100}%")
+print(f"Percentage space taken by dartboard: {inside_dart_board/(outside_dart_board+inside_dart_board)}")
