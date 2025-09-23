@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 import random
 
 # .open("") - lets computer know which image you will load
-img = Image.open("pixelimages\\dartboard2.png")  # Replace with your file path
+img = Image.open("Part3\\dartboard2.png")  # Replace with your file path
 img = img.convert("RGB")  # Ensures it’s in RGB mode
 
 # load the image into your program's memory.
