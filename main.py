@@ -19,7 +19,7 @@ while True:
             "3.1.4": "Chance of scoring 10 or more on a target",
             "3.1.5": "Area of each colour on an irregular target",
             "4.1.1": "Trials until red in a probability distribution",
-            "4.1.2": "Not Implemented"
+            "4.1.2": "Normal distribution of 4.1.1"
         },
         prompt="Choose a module to run:",
         return_key=True
