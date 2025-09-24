@@ -74,9 +74,12 @@ def print_table(data: list[list], table_length: int, table_title: str = "RESULTS
         print("")
     print("")
 
-def print_title(title: str, colour: str = "red", attrs: list = ["bold"]):
+def print_title(title: str, colour: str = "red", attrs: list = ["bold"], title_words: bool = True):
     print("")
-    cprint(title.title(), colour, attrs=attrs)
+    if title_words:
+        cprint(title.title(), colour, attrs=attrs)
+    else:
+        cprint(title, colour, attrs=attrs)
 
 def print_header(header: str, colour: str = "yellow", attrs: list = ["bold", "underline"]):
     print("")
