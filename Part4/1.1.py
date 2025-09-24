@@ -27,6 +27,12 @@ for _ in range(20000):
         trials += 1
     trials_until_red.append(trials)
 
+# save to output file
+with open("Part4\\output.txt", "w") as file:
+    file.writelines("output="+str(trials_until_red))
+print("Saved results to output.txt")
+
+# show table
 plt.hist(trials_until_red, bins=range(int(min(trials_until_red)), int(max(trials_until_red) + 2)), align='left',
          edgecolor='none') 
 plt.title('Distribution of Values')
