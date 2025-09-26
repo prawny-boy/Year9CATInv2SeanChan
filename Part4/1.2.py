@@ -1,4 +1,4 @@
-from output import output
+from Part4.output import output
 from matplotlib import pyplot as plt
 
 new_output = []

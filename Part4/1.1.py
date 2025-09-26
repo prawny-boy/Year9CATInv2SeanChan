@@ -28,7 +28,7 @@ for _ in range(20000):
     trials_until_red.append(trials)
 
 # save to output file
-with open("Part4\\output.txt", "w") as file:
+with open("Part4\\output.py", "w") as file:
     file.writelines("output="+str(trials_until_red))
 print("Saved results to output.txt")
 
