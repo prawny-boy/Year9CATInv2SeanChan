@@ -13,6 +13,8 @@ img = img.convert("RGB")  # Ensures it’s in RGB mode
 
 # load the image into your program's memory.
 pixels = img.load()
+tmp_image = img.copy()
+tmp_pixels = tmp_image.load()
 
 # Show the image without edits.
 img.show()
@@ -38,12 +40,14 @@ for i in range(trials):
     for colour in number_of_pixels.keys():
         if pixels[rand_x, rand_y] == colour:
             number_of_pixels[colour] += 1
-            pixels[rand_x,rand_y] = (0,0,0) 
+            tmp_pixels[rand_x,rand_y] = (0, 0, 255) 
+            break
     else:
-        print(f"Colour was not found. Colour {pixels[rand_x, rand_y]}")
+        tmp_pixels[rand_x,rand_y] = (255, 0, 0)  # outside of dart board, no colour
 
 # Show image with the edits.
-img.show()
+tmp_image.show()
+
 print("----APPROXIMATE RATIO OF EACH COLOUR----")
 for colour, amount in number_of_pixels.items():
     print(f"{colour}: {amount/trials}")

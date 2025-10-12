@@ -24,9 +24,14 @@ for i in range(5000):
 	# Randomly select a number within the height of the image.
     rand_y = random.randint(0,height-1)
     print(pixels[rand_x,rand_y])
-    if pixels[rand_x,rand_y] == (255,255,255):
+    if any([pixels[rand_x,rand_y] == (255, 255, 255), 
+            pixels[rand_x,rand_y] == (255, 0, 0),
+            pixels[rand_x,rand_y] == (183, 183, 183), # grey
+            pixels[rand_x,rand_y] == (223, 223, 223)]): # light grey
         outside_dart_board += 1
-        pixels[rand_x,rand_y] = (255,0,0)
+        pixels[rand_x,rand_y] = (255, 0, 0)
+    elif pixels[rand_x,rand_y] == (0, 0, 255):
+        inside_dart_board += 1
     else:
         inside_dart_board += 1
         pixels[rand_x,rand_y] = (0,0,255)

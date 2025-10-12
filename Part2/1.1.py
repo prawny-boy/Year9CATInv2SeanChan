@@ -24,12 +24,12 @@ for i in range(5000):
 	# Randomly select a number within the height of the image.
     rand_y = random.randint(0,height-1)
     print(pixels[rand_x,rand_y])
-    if pixels[rand_x,rand_y] == (255,255,255):
-        outside_bolt += 1
-        pixels[rand_x,rand_y] = (255,0,0)
-    else:
+    if pixels[rand_x,rand_y] == (255,255,54) or pixels[rand_x,rand_y] == (0,0,255):
         inside_bolt += 1
         pixels[rand_x,rand_y] = (0,0,255)
+    else:
+        outside_bolt += 1
+        pixels[rand_x,rand_y] = (255,0,0)
 
 # Show image with the edits.
 img.show()
