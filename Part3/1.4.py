@@ -1,5 +1,6 @@
 # Import the appropriate libraries.
 from PIL import Image, ImageDraw
+from print_functions import *
 import random
 
 # .open("") - lets computer know which image you will load
@@ -38,4 +39,9 @@ for i in range(5000):
 
 # Show image with the edits.
 img.show()
-print(f"Chance scoring 10 or more: {above_10/(above_10 + under_10)}")
+print_title("Results")
+print("Space taken by bolt:")
+print(f"Percentage: {above_10/(under_10+above_10)*100}%")
+print(f"Ratio: {above_10/(under_10+above_10)}")
+print(f"Amount of Pixels: {round(above_10/(under_10+above_10)*(width*height))} out of {(width*height)} pixels")
+

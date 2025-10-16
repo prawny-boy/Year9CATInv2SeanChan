@@ -1,5 +1,6 @@
 # Import the appropriate libraries.
 from PIL import Image, ImageDraw
+from print_functions import *
 import random
 
 # .open("") - lets computer know which image you will load
@@ -33,4 +34,8 @@ for i in range(5000):
 
 # Show image with the edits.
 img.show()
-print(f"Percentage space taken by bolt: {inside_bolt/(outside_bolt+inside_bolt)*100}%")
+print_title("Results")
+print("Space taken by bolt:")
+print(f"Percentage: {inside_bolt/(outside_bolt+inside_bolt)*100}%")
+print(f"Ratio: {inside_bolt/(outside_bolt+inside_bolt)}")
+print(f"Amount of Pixels: {round(inside_bolt/(outside_bolt+inside_bolt)*(width*height))} out of {(width*height)} pixels")

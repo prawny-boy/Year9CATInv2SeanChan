@@ -5,6 +5,7 @@
 # • Red: (237,49,25)
 # Import the appropriate libraries.
 from PIL import Image, ImageDraw
+from print_functions import *
 import random
 
 # .open("") - lets computer know which image you will load
@@ -48,6 +49,11 @@ for i in range(trials):
 # Show image with the edits.
 tmp_image.show()
 
-print("----APPROXIMATE RATIO OF EACH COLOUR----")
+print_title("Results")
 for colour, amount in number_of_pixels.items():
-    print(f"{colour}: {amount/trials}")
+    print(f"Space taken by colour {colour}:")
+    print(f"Percentage: {amount/(trials+amount)*100}%")
+    print(f"Ratio: {amount/(trials+amount)}")
+    print(f"Amount of Pixels: {round(amount/(trials+amount)*(width*height))} out of {(width*height)} pixels")
+    print()
+
